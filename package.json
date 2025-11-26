@@ -1,0 +1,17 @@
+{
+  "name": "openspp-e2e-tests",
+  "version": "1.0.0",
+  "description": "End-to-end tests for OpenSPP using Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen http://localhost:8069",
+    "sync-and-test": "bash scripts/sync-and-test.sh"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
